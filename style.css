@@ -16,20 +16,25 @@ body {
 
 .container {
   position: relative;
-  width: 400px;
-  border-radius: 20px 20px 0 0;
-  padding: 30px;
-  background: #333;
+  width: 600px;
+  padding: 50px;
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
   flex-direction: column;
-  border-radius: 1px solid #111;
   gap: 10px;
   padding-bottom: 70px;
+
+  border-radius: 20px; /* full rounded */
+  
+  /* glass white look */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
   -webkit-box-reflect: below 1px
     linear-gradient(transparent, transparent, #0005);
 }
+
 .container h2 {
   color: #666;
   font-weight: 500;
@@ -56,8 +61,10 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 3px;
-  background: #222;
+  height: 4px;
+  background: transparent;
+  overflow: hidden; /* important */
+  border-radius: 0 0 20px 20px; /* match container bottom */
 }
 
 .container .strengthMeter::before {
@@ -66,7 +73,7 @@ body {
   width: 0;
   height: 100%;
   transition: 0.5s;
-  background: #f00;
+  border-radius: inherit;
 }
 
 .container.weak .strengthMeter::before {
@@ -140,4 +147,32 @@ body {
 
 .show.hide::before {
   content: "Hide";
+}
+.extraInfo {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  background: url("C:\\Users\\sharv\\Downloads\\bg.jpeg") no-repeat center center/cover;
+}
+
+.container h2 {
+  color: #ffffff;
+}
+
+.container .inputArea input {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.extraInfo {
+  color: #e0e0e0;
 }
