@@ -1,39 +1,78 @@
-# Password Strength Checker 💪🔐
- 
+Password Strength Checker 🔐
 
-Welcome to the Password Strength Checker project! This powerful tool is designed to help you assess the strength of your passwords and ensure your online security.
+A simple and interactive web application that evaluates the strength of passwords in real-time and helps users create more secure credentials.
 
-## Project Purpose 📋
+--------
 
-The purpose of this project is to provide you with an easy-to-use tool to evaluate the strength of your passwords. Whether you're creating a new password or checking the security of an existing one, our Password Strength Checker has you covered. With this tool, you can make sure your online accounts are safe from potential threats.
+LIVE DEMO 🚀
+https://sharvarii7.github.io/password-strength-checker/
 
-## Design Tools 🎨
+--------
 
-We've used industry-standard design tools to create an intuitive and visually appealing user interface. Our design team leveraged Figma and Photoshop to craft a user-friendly experience.
+FEATURES 📌
 
-## Technologies Used 💻
+* Password strength detection (Weak / Moderate / Strong)
+* Entropy calculation (measures randomness)
+* Crack time estimation (approximate time to brute-force)
+* Common password detection (dictionary-based check)
+* Show / Hide password toggle
+* Clean and responsive UI
 
-- HTML
-- CSS
-- JavaScript
-- jQuery
-- Bootstrap
+--------
 
-## Project Live Location 🌐
+HOW IT WORKS 🧠
 
-You can access the live version of this project at [Password Strength Checker](https://password-strength.vercel.app/). Try it out and enhance your password security!
+* Evaluates password based on:
+  Length
+  Uppercase and lowercase characters
+  Numbers
+  Special characters
 
-📧 **Get in Touch**
-For inquiries, collaboration, or just to say hello, reach out to us at 📩 swamithedev@gmail.com.
+* Calculates entropy using character set and length
 
-🌟 **Portfolio**
-Discover more of our fantastic projects at [SwamiTheDev Portfolio](https://swamithedev.vercel.app). Your journey into the world of technology starts here!
+* Estimates crack time using brute-force logic
 
+* Checks against common passwords to flag weak ones
 
-## Thank You! 👏
+--------
 
-We appreciate you taking the time to explore our Password Strength Checker project. Your online security is our top priority, and we hope this tool helps you keep your accounts safe.
+TECH STACK 💻
 
-## Hashtags 📌
+HTML
+CSS
+JavaScript
 
-#PasswordStrength #Security #PasswordChecker #OnlineSecurity #WebDevelopment #CyberSecurity #TechProject #PasswordSafety #PasswordGenerator
+--------
+
+PROJECT STRUCTURE 📂
+
+password-strength-checker/
+│── index.html
+│── style.css
+│── script.js
+│── bg.jpeg
+
+--------
+
+SETUP ⚙️
+
+1. Clone the repository
+   git clone https://github.com/sharvarii7/password-strength-checker.git
+
+2. Open the folder
+
+3. Run index.html in your browser
+
+--------
+
+CONTACT 📧
+
+[sharvarihebbar7@gmail.com](mailto:sharvarihebbar7@gmail.com)
+
+--------
+
+NOTE ⚠️
+
+This tool provides an approximate evaluation and should not be considered a full security solution.
+
+--------
