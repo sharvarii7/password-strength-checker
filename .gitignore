@@ -1,0 +1,5 @@
+backend/rockyou.txt
+backend/hash.txt
+
+**/__pycache__/
+*.pyc
